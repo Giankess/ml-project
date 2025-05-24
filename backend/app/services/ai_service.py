@@ -1,4 +1,4 @@
-from langchain.llms import Ollama
+from langchain_community.llms import Ollama
 from langchain.prompts import ChatPromptTemplate
 from langchain.chains import LLMChain
 from typing import Dict, Any, List
