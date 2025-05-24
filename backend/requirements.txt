@@ -1,0 +1,16 @@
+fastapi==0.104.1
+uvicorn==0.24.0
+python-multipart==0.0.6
+python-docx==0.8.11
+langchain==0.0.350
+ollama==0.1.6
+faiss-cpu==1.7.4
+sqlalchemy==2.0.23
+pydantic==2.5.2
+python-jose==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1
+psycopg2-binary==2.9.9
+python-dotenv==1.0.0
+pytest==7.4.3
+httpx==0.25.2 
