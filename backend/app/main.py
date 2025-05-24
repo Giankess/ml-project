@@ -1,17 +1,16 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from typing import Optional
 import os
-from .services.document_service import DocumentService
-from .services.ai_service import AIService
-from .core.config import settings
+from app.services.document_service import DocumentService
+from app.services.ai_service import AIService
+from app.core.config import settings
 
 app = FastAPI(title="NDA Validator API")
 
-# CORS middleware configuration
+# Simple CORS configuration for local development
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # In production, replace with specific origins
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
